@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace TestApi
+namespace testWebApi
 {
     public class Program
     {
@@ -19,9 +19,6 @@ namespace TestApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://*:5000")
                 .UseStartup<Startup>();
-
-
     }
 }
