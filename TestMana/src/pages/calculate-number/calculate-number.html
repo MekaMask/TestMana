@@ -1,0 +1,69 @@
+<!--
+  Generated template for the CalculateNumberPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Calculate Number</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-input type="number" placeholder="Number" [(ngModel)]="num1"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-input type="number" placeholder="Number" [(ngModel)]="num2"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="buttonStyle">
+          <button ion-button round (click)="Plus()">Plus</button>
+        </div>
+      </ion-col>
+
+      <ion-col>
+        <div class="buttonStyle">
+          <button ion-button round (click)="Minus()">Minus</button>
+        </div>
+      </ion-col>
+
+      <ion-col >
+        <div class="buttonStyle">
+          <button ion-button round (click)="Multiple()">Multiple</button>
+        </div>
+      </ion-col>
+
+      <ion-col>
+        <div class="buttonStyle">
+          <button ion-button round (click)="Devide()">Devide</button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <div>
+          Result : {{result}}
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

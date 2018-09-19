@@ -1,0 +1,7 @@
+{
+  "name": "TestMana",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
